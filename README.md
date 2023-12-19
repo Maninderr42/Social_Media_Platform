@@ -46,13 +46,13 @@ Model-View-Controller Architecture: A well-organized structure for efficient dev
 Data Storage: MongoDB integration for storing user data, posts, and relationships
 
 ## API Endpoints
-
+
 • /api/users: User-related operations
-
+
 • /api/posts: Post-related operations
-
+
 • /api/comments: Comment-related operations
-
+
 • /api/follow: Follow/unfollow operations
-
+
 • /api/Anaytic: save all user Activity
