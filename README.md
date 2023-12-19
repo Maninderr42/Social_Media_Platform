@@ -1,4 +1,4 @@
-Social Media Platform Documentation
+# Social Media Platform Documentation #
 Introduction
 Welcome to the Social Media Platform, a comprehensive and feature-rich social networking application built on the robust foundations of Spring Boot and MongoDB. This platform empowers users to connect, share, and engage in a vibrant and interactive online community. Whether you're a developer exploring the source code or a user navigating the platform, this introduction will guide you through the essence of our Social Media Platform. Social Media Platform is designed to provide users with a seamless and enjoyable social media experience. It combines the power of Spring Boot for backend services, MongoDB for data storage, and a well-defined architecture to create a dynamic and scalable platform.
 Software Requirements
