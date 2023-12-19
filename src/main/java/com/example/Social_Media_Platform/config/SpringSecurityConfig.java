@@ -11,19 +11,21 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-public class SpringSecurityConfig  {
+public class SpringSecurityConfig extends WebSecurityConfiguration {
 
+    // Bean definition for PasswordEncoder
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-@Autowired
+    // Method to configure AuthenticationManagerBuilder
+    @Autowired
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // Configure authentication manager with user details and password encoder
+        // Configure in-memory authentication with a default user
         auth.inMemoryAuthentication()
                 .withUser("user")
-                .password(passwordEncoder().encode("password"))
+                .password(passwordEncoder().encode("password")) // Encoded password using BCrypt
                 .roles("USER");
     }
 }
